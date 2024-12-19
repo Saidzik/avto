@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>848</width>
+    <height>424</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.539773 rgba(14, 23, 106, 255), stop:1 rgba(85, 170, 255, 255));
+color: rgb(255, 255, 255);
+font-family: Noto Sans SC;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QFrame" name="">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255 ,255 ,0 );
+color: rgb(255, 255, 255);
+
+border-radius: 10px;</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTableView" name="tableView_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255 ,255 ,30 );
+border: 1px solid rgba(255,255,255,40);
+border-radius: 10px;
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="but_save_order">
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Noto Sans SC</family>
+            <pointsize>22</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="toolTipDuration">
+           <number>-1</number>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+
+QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 1px solid rgba(255,255,255,40);
+     border-radius:7px;
+width: 230;
+height: 30;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,150);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+          </property>
+          <property name="text">
+           <string>✔️</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icons/save_white_24dp.svg</normaloff>:/icons/icons/save_white_24dp.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="but_print_order">
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Noto Sans SC</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 1px solid rgba(255,255,255,40);
+     border-radius:7px;
+width: 230;
+height: 30;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,150);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+          </property>
+          <property name="text">
+           <string>⬇️</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icons/ios_share_white_24dp.svg</normaloff>:/icons/icons/ios_share_white_24dp.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="but_delete_order">
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Noto Sans SC</family>
+            <pointsize>18</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 1px solid rgba(255,255,255,40);
+     border-radius:7px;
+width: 230;
+height: 30;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,150);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+          </property>
+          <property name="text">
+           <string>🗑️</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icons/delete_white_24dp.svg</normaloff>:/icons/icons/delete_white_24dp.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="but_cancel_order">
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Noto Sans SC</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 1px solid rgba(255,255,255,40);
+     border-radius:7px;
+width: 230;
+height: 30;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,150);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+          </property>
+          <property name="text">
+           <string>❌</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icons/cancel_white_24dp.svg</normaloff>:/icons/icons/cancel_white_24dp.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 1px solid rgba(255,255,255,40);
+     border-radius:7px;
+width: 230;
+height: 30;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 30); 
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;</string>
+     </property>
+     <layout class="QHBoxLayout" name="hl_buts_action">
+      <item>
+       <widget class="QLabel" name="lb_sum_order">
+        <property name="maximumSize">
+         <size>
+          <width>170</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,0);
+     border: 1px solid rgba(255,255,255,0);
+     border-radius:7px;
+width: 230;
+height: 30;</string>
+        </property>
+        <property name="text">
+         <string>Итоговая сумма:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lb_sum_order_pr">
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,0);
+     border: 1px solid rgba(255,255,255,0);
+     border-radius:7px;
+width: 230;
+height: 30;</string>
+        </property>
+        <property name="text">
+         <string>0 P</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0); 
+border:None
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../Downloads/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

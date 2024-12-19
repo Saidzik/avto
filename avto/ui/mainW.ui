@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1202</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.539773 rgba(14, 23, 106, 255), stop:1 rgba(85, 170, 255, 255));
+background-color: rgb(11, 11, 11);
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font-family: Noto Sans SC;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255 ,255 ,0 );
+color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="hl_buts_action">
+      <item>
+       <widget class="QPushButton" name="but_add">
+        <property name="maximumSize">
+         <size>
+          <width>32412</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgba(255,255,255,30);
+color: rgba(255, 255, 255, 255);
+border-radius: 10px;
+width:230px;
+height:40px;}
+
+
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,30);
+}</string>
+        </property>
+        <property name="text">
+         <string>➕ Новый</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/icons/post_add_white_24dp.svg</normaloff>:/icons/icons/post_add_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="but_redac">
+        <property name="maximumSize">
+         <size>
+          <width>2135</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgba(255,255,255,30);
+color: rgba(255, 255, 255, 255);
+border-radius: 10px;
+width:230px;
+height:40px;}
+
+
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,30);
+}</string>
+        </property>
+        <property name="text">
+         <string>🖋️ Изменить</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/icons/edit_white_24dp.svg</normaloff>:/icons/icons/edit_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="but_delete">
+        <property name="maximumSize">
+         <size>
+          <width>1251245</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgba(255,255,255,30);
+color: rgba(255, 255, 255, 255);
+border-radius: 10px;
+width:230px;
+height:40px;}
+
+
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,30);
+}</string>
+        </property>
+        <property name="text">
+         <string>🗑️ Удалить</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/icons/delete_white_24dp.svg</normaloff>:/icons/icons/delete_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="but_order">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgba(255,255,255,30);
+color: rgba(255, 255, 255, 255);
+border-radius: 10px;
+width:230px;
+height:40px;}
+
+
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,30);
+}</string>
+        </property>
+        <property name="text">
+         <string>📝 Продажа</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/icons/print_white_24dp.svg</normaloff>:/icons/icons/print_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="but_excel">
+        <property name="maximumSize">
+         <size>
+          <width>2415125</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgba(255,255,255,30);
+color: rgba(255, 255, 255, 255);
+border-radius: 10px;
+width:230px;
+height:40px;}
+
+
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,30);
+}</string>
+        </property>
+        <property name="text">
+         <string>⬇️ EXCEL</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/icons/print_white_24dp.svg</normaloff>:/icons/icons/print_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255 ,255 ,30 );
+border: 1px solid rgba(255,255,255,40);
+border-radius: 10px;
+</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QComboBox" name="cb_search">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 7px;
+
+border: 1px solid gray;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-radius: 10px;
+width:230px;
+height:40px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_name">
+        <property name="maximumSize">
+         <size>
+          <width>9345349</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 7px;
+background-color: rgb(255, 255, 255);
+
+border: 1px solid gray;
+color: rgb(0, 0, 0);
+
+border-radius: 10px;
+width:230px;
+height:40px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="but_search">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgba(255,255,255,30);
+color: rgba(255, 255, 255, 255);
+border-radius: 10px;
+width:230px;
+height:40px;}
+
+
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,30);
+}</string>
+        </property>
+        <property name="text">
+         <string>🔍 Найти</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/icons/print_white_24dp.svg</normaloff>:/icons/icons/print_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1202</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="m_tables">
+    <property name="title">
+     <string>Таблицы</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="m_about">
+    <property name="title">
+     <string>О программе</string>
+    </property>
+    <addaction name="action_about"/>
+   </widget>
+   <widget class="QMenu" name="m_exit">
+    <property name="title">
+     <string>Выход</string>
+    </property>
+    <addaction name="action_exit"/>
+   </widget>
+   <addaction name="m_tables"/>
+   <addaction name="m_about"/>
+   <addaction name="m_exit"/>
+  </widget>
+  <action name="actiontables">
+   <property name="text">
+    <string>tables</string>
+   </property>
+  </action>
+  <action name="actionorders">
+   <property name="text">
+    <string>orders</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>about program</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Запросы</string>
+   </property>
+  </action>
+  <action name="action_orders">
+   <property name="text">
+    <string>Заказы</string>
+   </property>
+  </action>
+  <action name="action_workers">
+   <property name="text">
+    <string>Сотрудники</string>
+   </property>
+  </action>
+  <action name="action_pck">
+   <property name="text">
+    <string>ПЦК</string>
+   </property>
+  </action>
+  <action name="action_request">
+   <property name="text">
+    <string>Запросы</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>О программы</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
